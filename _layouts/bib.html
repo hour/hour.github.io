@@ -1,0 +1,15 @@
+---
+---
+{{ reference | replace_first: 'Kaing, H.', '<b>Kaing, H.</b>' }}
+
+{% if entry.paper %}
+[<a href="{{ entry.paper }}">Paper</a>]
+{% endif %}
+
+{% if entry.slides %}
+[<a href="{{ entry.slides }}">Slides</a>]
+{% endif %}
+
+{% if entry.note %}
+({{ entry.note }})
+{% endif %}

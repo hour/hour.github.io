@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<style>
+  /* Basic styling for layout */
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .photo {
+      width: 20%; /* Adjust according to your preference */
+  }
+  .description {
+      width: 80%; /* Adjust according to your preference */
+      padding: 0 20px;
+  }
+  @media (max-width: 768px) {
+      /* For smaller screens, stack elements vertically */
+      .container {
+          flex-direction: column;
+      }
+      .description {
+        width: 100%;
+      }
+      .description h2 {
+        text-align: center;
+      }
+      .photo {
+          width: 50%;
+      }
+  }
+</style>
+
+<link rel="stylesheet" href="/thirdparties/academicons-1.9.4/css/academicons.min.css"/>
+
+<article class="post">
+
+  <!-- <div class="post-content" style="position: relative;">
+    <img src="{{ page.author_photo | escape }}" style="width: 200px; margin-right: 40px; float: left">
+    <div class="post-content" style="position: absolute; bottom: 0;">
+      <h1>{{ page.author_name | escape }}</h1>
+      <p>{{ page.author_brief | escape }}</p>
+    </div>
+  </div> -->
+
+  <div class="post-content container">
+    <img class="photo" src="{{ page.author_photo | escape }}" alt="Description of the photo">
+    <div class="description">
+        <h2>{{ page.author_name | escape }}</h2>
+        <p>{{ page.author_brief | escape }}</p>
+        <p>My research interests include {{ page.research_interest | escape }}</p>
+        
+        {%- if page.dribbble_username -%}<a href="https://dribbble.com/{{ page.dribbble_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.facebook_username -%}<a href="https://www.facebook.com/{{ page.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.flickr_username -%}<a href="https://www.flickr.com/photos/{{ page.flickr_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#flickr' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.github_username -%}<a href="https://github.com/{{ page.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.instagram_username -%}<a href="https://instagram.com/{{ page.instagram_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.linkedin_username -%}<a href="https://www.linkedin.com/in/{{ page.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.pinterest_username -%}<a href="https://www.pinterest.com/{{ page.pinterest_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#pinterest' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- for mst in page.mastodon -%}{%- if mst.username and mst.instance -%}<a href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg></a>{%- endif -%}{%- endfor -%}
+        {%- if page.twitter_username -%}<a href="https://www.twitter.com/{{ page.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.youtube_username -%}<a href="https://youtube.com/{{ page.youtube_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.googleplus_username -%}<a href="https://plus.google.com/{{ page.googleplus_username| escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#googleplus' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.rss -%}<a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a>{%- endif -%}
+        {%- if page.google_scholar -%}<a href="https://plus.google.com/{{ page.google_scholar| escape }}"><i class="ai ai-google-scholar"></i></a>{%- endif -%}
+        {%- if page.email -%}<p>Email: {{ page.email }}</p>{%- endif -%}
+        
+    </div>
+ </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
