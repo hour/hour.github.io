@@ -28,7 +28,7 @@ Institute of Technology of Cambodia (ITC), 2013
 
 ### Arwards
 - Sep 2013 : The France Government Scholarships (BGF) for Master Degree in France
-- Jun 2012 : SUMITOMO scholarship for excellent students
+- Jun 2012 : SUMITOMO award for excellent students
 
 ### Activities
 - Review: LREC-COLING, ICON, IEEE Access
