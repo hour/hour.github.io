@@ -31,4 +31,4 @@ Institute of Technology of Cambodia (ITC), 2013
 - Jun 2012 : SUMITOMO award for excellent students
 
 ### Activities
-- Review: LREC-COLING, ICON, IEEE Access
+- Review: ACL Rolling Review, LREC-COLING, ICON, IEEE Access

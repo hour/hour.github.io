@@ -76,6 +76,7 @@ scholar:
   # bibliography_template: "{{reference}}"
   bibliography_template: bib
   bibliography_group_tag: h1
+  bibliography_list_tag: ul
 
   replace_strings: true
   join_strings:    true
