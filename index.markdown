@@ -7,8 +7,8 @@ author_brief: Researcher, National Institute of Information and Communications T
 research_interest: Machine Translation, Language Modeling, and Morphological and Syntax Analysis.
 email: hour_kaing { at } nict { dot } go { dot } jp
 # google_scholar: zJ0wGWoAAAAJ&hl
-# github_username: hour
-# twitter_username: hour_kaing
+github_username: hour
+twitter_username: hour_kaing
 ---
 
 ---
@@ -26,9 +26,10 @@ Institute of Technology of Cambodia (ITC), 2013
 - Jun 2016 - May 2018 : Researcher and Lecturer at NIPTICT
 - Oct 2014 - May 2016 : Researcher and Lecturer at ITC
 
-### Arwards
+### Awards
 - Sep 2013 : The France Government Scholarships (BGF) for Master Degree in France
 - Jun 2012 : SUMITOMO award for excellent students
 
 ### Activities
-- Review: ACL Rolling Review, LREC-COLING, ICON, IEEE Access
+- Reviewer: ACL Rolling Review, LREC-COLING, ICON, IEEE Access
+- Emergency Area Chair: ACL Rolling Review

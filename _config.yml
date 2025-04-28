@@ -69,7 +69,7 @@ scholar:
   order: ascending
 
   group_order: descending
-  group_by: year
+  # group_by: year
 
   source: ./_bibliography
   bibliography: bibliography.bib
