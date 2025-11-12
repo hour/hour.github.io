@@ -31,5 +31,5 @@ Institute of Technology of Cambodia (ITC), 2013
 - Jun 2012 : SUMITOMO award for excellent students
 
 ### Activities
-- Reviewer: ACL Rolling Review, LREC-COLING, ICON, IEEE Access
-- Emergency Area Chair: ACL Rolling Review
+- Reviewer: ARR, TALLIP, LREC-COLING, Springer, ICON, and IEEE Access
+- Area Chair: ARR
