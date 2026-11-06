@@ -18,21 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# title: Hour Kaing 's homepage
-# author: Hour Kaing
-# email: hour_kaing{at}nict{dot}go{dot}jp
-# description: >- # this means to ignore newlines until "baseurl:"
+title: Hour Kaing's Homepage
+author: Hour Kaing
+description: Researcher at NICT working on machine translation, language modeling, and language analysis.
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: hour_kaing
 # github_username: hour
 # google_scholar: https://scholar.google.com/citations?user=zJ0wGWoAAAAJ&hl=en
-url: hour.github.io
+url: https://hour.github.io
 
 #domain: hour.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-#url: https://hour.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-#baseurl: hour.github.io     # place folder name if the site is served in a subfolder
+baseurl: ""
 
 # Build settings
 theme: minima
